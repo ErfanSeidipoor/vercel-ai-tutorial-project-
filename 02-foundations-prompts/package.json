@@ -1,0 +1,35 @@
+{
+  "name": "02-foundations-prompts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "basic": "node -r ts-node/register --env-file=.env src/1-basic.ts",
+    "dynamic-data": "node -r ts-node/register --env-file=.env src/2-dynamic-data",
+    "system-prompts": "node -r ts-node/register --env-file=.env src/3-system-prompts",
+    "message-prompts": "node -r ts-node/register --env-file=.env src/4-message-prompts",
+    "user-message-binary-image": "node -r ts-node/register --env-file=.env src/5-user-message-binary-image",
+    "base-64-image": "node -r ts-node/register --env-file=.env src/6-base-64-image.ts",
+    "image-url": "node -r ts-node/register --env-file=.env src/7-image-url.ts",
+    "pdf": "node -r ts-node/register --env-file=.env src/8-pdf.ts",
+    "mp3-audio": "node -r ts-node/register --env-file=.env src/9-mp3-audio.ts",
+    "assistant-messages": "node -r ts-node/register --env-file=.env src/10-assistant-messages",
+    "assistant-message-with-tool-call": "node -r ts-node/register --env-file=.env src/11-assistant-message-with-tool-call",
+    "multi-modal-tool-results": "node -r ts-node/register --env-file=.env src/12-multi-modal-tool-results",
+    "system-messages": "node -r ts-node/register --env-file=.env src/13-system-messages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ai-sdk/google": "^1.0.11",
+    "@ai-sdk/openai": "^1.0.10",
+    "ai": "^4.0.21",
+    "ollama-ai-provider": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
