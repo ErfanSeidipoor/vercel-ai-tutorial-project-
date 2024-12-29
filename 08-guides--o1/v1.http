@@ -1,0 +1,24 @@
+###
+POST http://localhost:3000/api/v1 HTTP/1.1
+content-type: application/json
+
+{
+    "prompt": "Explain quantum entanglement briefly"
+}
+
+###
+POST http://localhost:3000/api/v2 HTTP/1.1
+content-type: application/json
+
+{
+    "prompt": "Explain quantum entanglement briefly"
+}
+
+###
+
+POST http://localhost:3000/api/v3 HTTP/1.1
+content-type: application/json
+
+{
+    "prompt": "Generate a lasagna recipe."
+}

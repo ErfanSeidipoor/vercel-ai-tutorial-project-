@@ -2,9 +2,7 @@
 
 This project is based on the [guides multi-modal-chatbot](https://sdk.vercel.ai/docs/guides/multi-modal-chatbot)
 
-This is a demo application built using the AI SDK, showcasing a
-multi-modal chatbot that can handle user input, image uploads, and
-streaming responses from a large language model (LLM).
+This is a demo application built using the AI SDK, showcasing a multi-modal chatbot that can handle user input, image uploads, and streaming responses from a large language model (LLM).
 
 ## Project Structure
 
