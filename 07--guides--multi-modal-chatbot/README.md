@@ -13,3 +13,6 @@ The project consists of two main components: `app/page.tsx` and the
   handles user input, displays chat messages, and uploads images.
 - `/api/chat`: This is an API endpoint that accepts POST requests and
   interacts with the LLM to generate responses.
+
+
+git clone --single-branch --branch starter https://github.com/vercel-labs/natural-language-postgres
