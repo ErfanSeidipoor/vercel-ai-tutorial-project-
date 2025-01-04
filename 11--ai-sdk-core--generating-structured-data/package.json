@@ -1,0 +1,31 @@
+{
+  "name": "ai-sdk-core--generating-text",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "generate-object": "node -r ts-node/register --env-file=.env src/1-generate-object",
+    "stream-object": "node -r ts-node/register --env-file=.env src/2-stream-object",
+    "output-array": "node -r ts-node/register --env-file=.env src/3-output-array",
+    "output-enum": "node -r ts-node/register --env-file=.env src/4-output-enum",
+    "no-schema": "node -r ts-node/register --env-file=.env src/5-no-schema",
+    "schema-name-description": "node -r ts-node/register --env-file=.env src/6-schema-name-description",
+    "error-handling": "node -r ts-node/register --env-file=.env src/7-error-handling",
+    "structured-outputs-with-generateText": "node -r ts-node/register --env-file=.env src/8-structured-outputs-with-generateText",
+    "structured-outputs-with-streamText": "node -r ts-node/register --env-file=.env src/9-structured-outputs-with-streamText"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.0.10",
+    "ai": "^4.0.21",
+    "ollama-ai-provider": "^1.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
