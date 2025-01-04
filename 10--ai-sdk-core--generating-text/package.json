@@ -1,0 +1,31 @@
+{
+  "name": "ai-sdk-core--generating-text",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "generate-text": "node -r ts-node/register --env-file=.env src/1-generate-text",
+    "summarize-article": "node -r ts-node/register --env-file=.env src/2-summarize-article",
+    "stream-text": "node -r ts-node/register --env-file=.env src/3-stream-text",
+    "stream-text-while-loop": "node -r ts-node/register --env-file=.env src/4-stream-text-while-loop",
+    "on-chunk-callback": "node -r ts-node/register --env-file=.env src/5-on-chunk-callback",
+    "on-finish-callback": "node -r ts-node/register --env-file=.env src/6-on-finish-callback",
+    "fullStream-property": "node -r ts-node/register --env-file=.env src/7-fullStream-property",
+    "smoothing-streams": "node -r ts-node/register --env-file=.env src/8-smoothing-streams",
+    "generating-long-text": "node -r ts-node/register --env-file=.env src/9-generating-long-text"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.0.10",
+    "ai": "^4.0.21",
+    "ollama-ai-provider": "^1.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
