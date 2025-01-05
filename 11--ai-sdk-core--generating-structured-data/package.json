@@ -1,5 +1,5 @@
 {
-  "name": "ai-sdk-core--generating-text",
+  "name": "ai-sdk-core--generating-structured-data",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

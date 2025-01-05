@@ -1,0 +1,36 @@
+import { openai } from "@ai-sdk/openai";
+import { CoreMessage, generateText } from "ai";
+import { ollama } from "ollama-ai-provider";
+import { z } from "zod";
+
+(async function () {
+  const response = await generateText({
+    // model: ollama("llama3.2"),
+    model: openai("gpt-3.5-turbo"),
+    prompt: "What is the weather in San Francisco?",
+    maxSteps: 10,
+    tools: {
+      weather: {
+        description: "Get the weather in a location ?",
+        parameters: z.object({
+          location: z.string().describe("the location to get the weather for"),
+        }),
+        execute: async (
+          { location },
+          { toolCallId, messages, abortSignal }
+        ) => {
+          console.dir({ toolCallId, messages, abortSignal }, { depth: null });
+
+          return {
+            location,
+            // temperature: 72 + Math.floor(Math.random() * 21) - 10,
+            temperature: 72,
+          };
+        },
+      },
+    },
+  });
+
+  const { text, toolCalls, toolResults } = response;
+  console.dir({ text, toolCalls, toolResults });
+})();
