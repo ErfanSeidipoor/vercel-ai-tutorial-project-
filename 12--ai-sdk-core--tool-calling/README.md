@@ -1,5 +1,7 @@
-# AI SDK Core Generating Structured Data
+# AI SDK Core Tool Calling
 
-This project is based on the [AI SDK Core Generating Structured Data](https://sdk.vercel.ai/docs/ai-sdk-core/generating-structured-data)
+This project is based on the [AI SDK Core Tool Calling](https://sdk.vercel.ai/docs/ai-sdk-core/tools-and-tool-calling)
 
-The AI SDK standardises structured object generation across model providers with the generateObject and streamObject functions. You can use both functions with different output strategies, e.g. array, object, or no-schema, and with different generation modes, e.g. auto, tool, or json. You can use Zod schemas or JSON schemas to specify the shape of the data that you want, and the AI model will generate data that conforms to that structure.
+# AI SDK Core: Tool Calling Tutorial
+
+This tutorial will guide you through the basics of tool calling with the AI SDK Core, a powerful library for building AI-powered applications. The AI SDK Core provides a powerful way to call tools from within your application. Tools can be used to perform various tasks, such as text generation, entity recognition, and more.

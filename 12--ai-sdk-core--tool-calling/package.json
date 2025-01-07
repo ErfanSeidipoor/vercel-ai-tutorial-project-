@@ -7,7 +7,10 @@
     "max-step": "node -r ts-node/register --env-file=.env src/2-max-step",
     "tool-choice": "node -r ts-node/register --env-file=.env src/3-tool-choice",
     "tool-call-id": "node -r ts-node/register --env-file=.env src/4-tool-call-id",
-    "abort-signal": "node -r ts-node/register --env-file=.env src/5-abort-signal"
+    "abort-signal": "node -r ts-node/register --env-file=.env src/5-abort-signal",
+    "types": "node -r ts-node/register --env-file=.env src/6-types",
+    "handling-errors-generate-text": "node -r ts-node/register --env-file=.env src/7-handling-errors-generate-text",
+    "handling-errors-stream-text": "node -r ts-node/register --env-file=.env src/8-handling-errors-stream-text"
   },
   "keywords": [],
   "author": "",
