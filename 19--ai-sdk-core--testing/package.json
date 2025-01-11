@@ -1,9 +1,12 @@
 {
-  "name": "ai-sdk-core--image-generation",
+  "name": "19--ai-sdk-core--testing",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "basic": "node -r ts-node/register --env-file=.env src/1-basic"
+    "generate-text": "node -r ts-node/register --env-file=.env src/1-generate-text",
+    "stream-text": "node -r ts-node/register --env-file=.env src/2-stream-text",
+    "generate-object": "node -r ts-node/register --env-file=.env src/3-generate-object",
+    "stream-object": "node -r ts-node/register --env-file=.env src/4-stream-object"
   },
   "keywords": [],
   "author": "",

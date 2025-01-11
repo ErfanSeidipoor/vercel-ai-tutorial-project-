@@ -1,9 +1,11 @@
 {
-  "name": "ai-sdk-core--image-generation",
+  "name": "18--ai-sdk-core--error-handling",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "basic": "node -r ts-node/register --env-file=.env src/1-basic"
+    "basic": "node -r ts-node/register --env-file=.env src/1-basic",
+    "stream-error": "node -r ts-node/register --env-file=.env src/2-stream-error",
+    "full-stream-error": "node -r ts-node/register --env-file=.env src/3-full-stream-error"
   },
   "keywords": [],
   "author": "",
