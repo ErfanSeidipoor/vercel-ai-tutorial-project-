@@ -1,5 +1,6 @@
 import { ollama } from "ollama-ai-provider";
 import { streamText } from "ai";
+import { openai } from "@ai-sdk/openai";
 
 export const maxDuration = 30;
 
@@ -15,8 +16,8 @@ export async function POST(req: Request) {
   });
 
   const result = streamText({
-    model: ollama("llama3.2-vision"),
-    // model: openai("gpt-4-turbo"),
+    // model: ollama("llama3.2-vision"),
+    model: openai("gpt-4-turbo"),
     system: "You are a helpful assistant.",
     messages,
   });
