@@ -18,8 +18,8 @@ export async function POST(req: Request) {
     maxSteps: 5,
     experimental_toolCallStreaming: true,
 
-    // model: openai("gpt-4-turbo"),
-    model: ollama("llama3.2"),
+    model: openai("gpt-4-turbo"),
+    // model: ollama("llama3.2"),
     messages: [...systemMessage, ...messages],
     tools: {
       // server-side tool with execute function:

@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 * {
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #000;
 }
 :root {
   --background: #ffffff;
