@@ -1,6 +1,9 @@
 "use client";
 
 import { useChat } from "ai/react";
+import { Weather } from '@/components/weather';
+import { Stock } from "@/components/stock";
+
 
 export default function Page() {
   const { messages, input, handleInputChange, handleSubmit, error, reload } =
@@ -24,6 +27,34 @@ export default function Page() {
         <div key={message.id}>
           <div>{message.role === "user" ? "User: " : "AI: "}</div>
           <div>{message.content}</div>
+
+          <div>
+            {message.toolInvocations?.map(toolInvocation => {
+              const { toolName, toolCallId, state, } = toolInvocation;
+
+              if (state === 'result') {
+                if (toolName === 'displayWeather') {
+                  const { result } = toolInvocation;
+                  return (
+                    <div key={toolCallId}>
+                      <Weather {...result} />
+                    </div>
+                  );
+                } else if (toolName === 'getStockPrice') {
+                  const { result } = toolInvocation;
+                  return <Stock key={toolCallId} {...result} />;
+                }
+              } else {
+                return (
+                  <div key={toolCallId}>
+                    {toolName === 'displayWeather' ? (
+                      <div>Loading weather...</div>
+                    ) : null}
+                  </div>
+                );
+              }
+            })}
+          </div>
         </div>
       ))}
 
