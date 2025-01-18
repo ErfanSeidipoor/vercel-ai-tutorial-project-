@@ -1,6 +1,6 @@
-# AI SDK AI SDK UI Chatbot
+# AI SDK UI Chatbot
 
-This project is based on the [AI SDK AI SDK UI Chatbot](https://sdk.vercel.ai/docs/ai-sdk-ui/chatbot#controlling-the-response-stream)
+This project is based on the [AI SDK UI Chatbot](https://sdk.vercel.ai/docs/ai-sdk-ui/chatbot#controlling-the-response-stream)
 
 # AI SDK UI: Chatbot Message Persistence
 
